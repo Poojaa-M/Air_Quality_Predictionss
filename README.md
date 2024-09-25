@@ -1,23 +1,21 @@
-###AIR QUALITY PREDICTION
+Air Quality Prediction
+Project Overview
+This project is a web-based application that predicts the Air Quality Index (AQI) based on environmental factors such as temperature and humidity. It combines a machine learning model with a user-friendly interface to provide real-time predictions based on user input.
 
-##Project Overview:
-This project aims to build a web-based application for predicting the Air Quality Index (AQI) based on environmental factors such as temperature and humidity. It combines machine learning (ML) for prediction and web development to create a user-friendly interface where users can input relevant data and receive a prediction for the air quality.
+Key Features
+Machine Learning Model:
 
-##Key Features:
-#Machine Learning Model:
+The model is built using a Decision Tree Regressor to predict the air quality index.
+The model is trained on sample environmental data, or it can be trained with real AQI datasets.
+The trained model is saved in a serialized form using Pickle for use within the web application.
+Web Application:
 
-The core of the project is a Decision Tree Regressor machine learning model that predicts the air quality index based on temperature and humidity data.
-The model is trained using sample data (or can be trained with real historical AQI datasets) and saved in a serialized form using Pickle for future use in the web application.
+Built using the Flask framework to serve a simple and clean web interface.
+Users can input temperature and humidity values to receive a predicted air quality index.
+The app consists of:
+Home page: Users input temperature and humidity.
+Results page: Displays the predicted AQI based on the inputs.
+User Interface:
 
-#Web Application:
-
-A Flask-based web application serves as the user interface.
-Users can enter temperature and humidity values into a form, and the app will predict the air quality index using the pre-trained model.
-The app consists of two pages:
-The Home page where users input the data.
-The Results page where the predicted AQI is displayed.
-
-#User Interface Design:
-
-The UI features a purple background with a clean and minimalistic design.
-Forms are styled for simplicity and user-friendliness, ensuring a smooth user experience.
+A purple background theme with a clean and minimalistic design.
+Input forms are styled for ease of use and user-friendly experience.
