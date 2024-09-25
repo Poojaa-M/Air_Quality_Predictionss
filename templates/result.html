@@ -1,0 +1,31 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .result {
+            background-color: #4b0082;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predicted Air Quality Index</h1>
+    <div class="result">
+        <p>The predicted Air Quality Index is: <strong>{{ prediction }}</strong></p>
+    </div>
+</body>
+</html>

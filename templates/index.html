@@ -1,0 +1,46 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Prediction</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: #4b0082;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+        button {
+            background-color: #ffffff;
+            color: purple;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predict Air Quality</h1>
+    <form action="/predict" method="POST">
+        <label for="temperature">Temperature (°C):</label><br>
+        <input type="text" id="temperature" name="temperature" required><br>
+        <label for="humidity">Humidity (%):</label><br>
+        <input type="text" id="humidity" name="humidity" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
