@@ -1,5 +1,5 @@
-Air Quality Prediction
-Project Overview
+###Air Quality Prediction
+##Project Overview
 This project is a web-based application that predicts the Air Quality Index (AQI) based on environmental factors such as temperature and humidity. It combines a machine learning model with a user-friendly interface to provide real-time predictions based on user input.
 
 Key Features
